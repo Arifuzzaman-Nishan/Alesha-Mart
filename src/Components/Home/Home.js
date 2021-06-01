@@ -1,9 +1,9 @@
 import React from "react";
 import { Card, Carousel, Container, Row } from "react-bootstrap";
-import banner1 from "../../bannerImages/1.jpg";
-import banner2 from "../../bannerImages/2.jpg";
-import banner3 from "../../bannerImages/3.jpg";
-import banner4 from "../../bannerImages/4.jpg";
+import banner1 from "../../bannerImages/1.png";
+import banner2 from "../../bannerImages/2.png";
+import banner3 from "../../bannerImages/3.png";
+import banner4 from "../../bannerImages/4.png";
 import HomeCardShow from "../HomeCardShow/HomeCardShow";
 import "./Home.css";
 
@@ -38,13 +38,13 @@ const Home = () => {
     },
   ];
   return (
-    <div>
-      <Carousel>
+    <div className=''>
+      <Carousel >
         {bannerFakeData.map((image) => (
-          <Carousel.Item interval={1000}>
+          <Carousel.Item className='border border-danger' interval={1000}>
             <div className="img-height">
               <img
-                className="d-block w-100"
+                className="img-fluid"
                 src={image.img}
                 alt="First slide"
               />
@@ -52,13 +52,11 @@ const Home = () => {
           </Carousel.Item>
         ))}
       </Carousel>
-      {/* <Container className='my-5 border border-danger'> */}
         <Row className='my-5'>
           {cardFakeData.map((data) => (
             <HomeCardShow data={data} />
           ))}
         </Row>
-      {/* </Container> */}
     </div>
   );
 };

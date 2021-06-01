@@ -1,11 +1,10 @@
-import React from 'react';
-import { Button } from 'react-bootstrap';
+import React from "react";
+import NavigationBar from "./Components/NavigationBar/NavigationBar";
 
 const App = () => {
   return (
     <div>
-      <h1>nishan</h1>
-      <Button>click me</Button>
+      <NavigationBar />
     </div>
   );
 };

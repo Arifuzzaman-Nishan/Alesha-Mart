@@ -1,0 +1,23 @@
+.home-card:hover {
+  transition: all 0.2s ease-out;
+  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+  top: -4px;
+  border: 1px solid #cccccc;
+  cursor: pointer;
+}
+.home-card{
+    border: none;
+}
+
+
+.home-card:before {
+  content: "";
+  border-radius: 32px;
+  transform: scale(2);
+  transform-origin: 50% 50%;
+  transition: transform 0.15s ease-out;
+}
+
+.home-card:hover:before {
+  transform: scale(2.15);
+}

@@ -41,7 +41,7 @@ const Home = () => {
     <div className=''>
       <Carousel >
         {bannerFakeData.map((image) => (
-          <Carousel.Item className='border border-danger' interval={1000}>
+          <Carousel.Item interval={3000}>
             <div className="img-height">
               <img
                 className="img-fluid"
@@ -52,6 +52,9 @@ const Home = () => {
           </Carousel.Item>
         ))}
       </Carousel>
+
+      {/* Home card data */}
+      
         <Row className='my-5'>
           {cardFakeData.map((data) => (
             <HomeCardShow data={data} />

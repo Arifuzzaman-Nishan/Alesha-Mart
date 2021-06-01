@@ -1,0 +1,15 @@
+.primary-color{
+    color: #EA6721;
+}
+.cursor{
+    cursor: pointer;
+}
+.old-price{
+    text-decoration: line-through;
+}
+.text-color{
+    color: #666;
+}
+.bold{
+    font-weight: 600;
+}

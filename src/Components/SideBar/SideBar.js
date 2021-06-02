@@ -10,10 +10,11 @@ const SideBar = () => {
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
+
   return (
-    <div>
+    <div className='d-lg-none d-block'>
       <div className="nav-bar">
-        <a href="#" className="menu-bars">
+        <a href="#" className="menu-bars ">
           <FaIcons.FaBars onClick={showSidebar} />
         </a>
       </div>

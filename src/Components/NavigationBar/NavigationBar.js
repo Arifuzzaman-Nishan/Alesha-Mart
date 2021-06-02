@@ -10,12 +10,12 @@ import { faUser } from "@fortawesome/free-solid-svg-icons";
 
 const NavigationBar = () => {
   return (
-    <div className="sticky">
+    <div className="sticky d-lg-block d-none">
       <Navbar className="nav-border" bg="light" expand="lg">
         <Container>
           <Navbar.Brand href="#home">support@aleshamart.com</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
+          {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
+          {/* <Navbar.Collapse id="basic-navbar-nav"> */}
             <Nav className="me-auto">
               <Nav.Link className="ml-2 " href="#home">
                 Download App
@@ -39,7 +39,7 @@ const NavigationBar = () => {
                 16731
               </Nav.Link>
             </Nav>
-          </Navbar.Collapse>
+          {/* </Navbar.Collapse> */}
         </Container>
       </Navbar>
 

@@ -8,11 +8,11 @@ import SideBar from "./Components/SideBar/SideBar";
 const App = () => {
   return (
     <div>
-      {/* <NavigationBar /> */}
       <SideBar/>
-      <Home/>
-      <Collection/>
-      <Footer/>
+      <NavigationBar />
+      <Home />
+      <Collection />
+      <Footer />
     </div>
   );
 };

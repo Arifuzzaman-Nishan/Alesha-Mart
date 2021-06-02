@@ -1,5 +1,6 @@
 const beverage = [
     {
+        title:'TRANSCOM BEVERAGE BRAND STORE',
         description: 'pack of 24 pcs pepsi - 250 ml',
         newPrice: 'TK. 259.20',
         discount: '40% OFF',

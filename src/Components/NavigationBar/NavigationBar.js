@@ -7,38 +7,57 @@ import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebookF,
+  faInstagram,
+  faGooglePlusG,
+  faTelegramPlane,
+} from "@fortawesome/free-brands-svg-icons";
+
+import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
 
 const NavigationBar = () => {
   return (
     <div className="sticky d-lg-block d-none">
       <Navbar className="nav-border" bg="light" expand="lg">
         <Container>
-          <Navbar.Brand href="#home">support@aleshamart.com</Navbar.Brand>
-          {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
-          {/* <Navbar.Collapse id="basic-navbar-nav"> */}
-            <Nav className="me-auto">
-              <Nav.Link className="ml-2 " href="#home">
-                Download App
-              </Nav.Link>
-              <Nav.Link className="ml-2" href="#link">
-                Merchant Zone
-              </Nav.Link>
-              <Nav.Link className="ml-2" href="#link">
-                Become A Member
-              </Nav.Link>
-              <Nav.Link className="ml-2" href="#link">
-                Upload & Order
-              </Nav.Link>
-              <Nav.Link className="ml-2" href="#link">
-                Track Order
-              </Nav.Link>
-              <Nav.Link className="ml-2" href="#link">
-                Live Chat
-              </Nav.Link>
-              <Nav.Link className="ml-2" href="#link">
-                16731
-              </Nav.Link>
-            </Nav>
+          <div className=''>
+            <FontAwesomeIcon
+              className="primary-color"
+              style={{ fontSize: "2rem" }}
+              icon={faTelegramPlane}
+            />
+            <h6 className="primary-color">support@aleshamart.com</h6>
+          </div>
+          <Nav className="me-auto">
+            <Nav.Link className="ml-2 " href="#home">
+              Download App
+            </Nav.Link>
+            <Nav.Link className="ml-2" href="#link">
+              Merchant Zone
+            </Nav.Link>
+            <Nav.Link className="ml-2" href="#link">
+              Become A Member
+            </Nav.Link>
+            <Nav.Link className="ml-2" href="#link">
+              Upload & Order
+            </Nav.Link>
+            <Nav.Link className="ml-2" href="#link">
+              Track Order
+            </Nav.Link>
+            <Nav.Link className="ml-2" href="#link">
+              Live Chat
+            </Nav.Link>
+            <div></div>
+            <Nav.Link
+              style={{ color: "rgb(234, 103, 33)" }}
+              className="ml-2"
+              href="#link"
+            >
+              <FontAwesomeIcon className="mr-2" icon={faPhoneAlt} />
+              16731
+            </Nav.Link>
+          </Nav>
           {/* </Navbar.Collapse> */}
         </Container>
       </Navbar>

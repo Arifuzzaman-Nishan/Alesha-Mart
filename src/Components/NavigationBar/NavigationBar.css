@@ -50,7 +50,7 @@
     border-bottom: 1px solid rgba(234, 103, 33, 1);
 }
 .sticky {
-  position: -webkit-sticky; /* Safari */
+  position: -webkit-sticky; 
 	position: sticky;
 	top: 0;
   z-index: 1;
